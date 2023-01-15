@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="container">
+            <div class="sub-container">
+                <div class="user-amount-container">
+                    <h3>Enter Expenses</h3>
+                    <p class="hide error" id="product-title-error">
+                        Values cannot be empty
+                    </p>
+                    <input type="text" class="product-title" id="product-title" placeholder="Enter Title of Product" />
+                    <input type="number" id="user-amount" placeholder="Enter Cost of Product" />
+                    <button class="submit" id="add-expenses">Add</button>
+                </div>
+            </div>
+
+            <div class="output-container flex-space">
+                <div class="totalExpenses">
+                    <p>Total Expenses For Today</p>
+                    <span id="expenditure-value">0</span>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="list">
+            <h3>Expenses</h3>
+            <div class="list-container" id="list"></div>
+        </div>
+    </div>
+
+    <script src="assets/js/et.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
